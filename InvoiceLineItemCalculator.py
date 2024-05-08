@@ -2,7 +2,6 @@
 #CIS 261
 #Week 6 Invoice Calculator
 
-from logging.handlers import TimedRotatingFileHandler
 
 
 def get_price():
@@ -22,19 +21,19 @@ def get_quantity():
 def main():
     print("Welcome To The Invoice Line Item Calculator\n")
     
-while True:
-    price = get_price()
-    quantity = get_quantity()
+    while True:
+        price = get_price()
+        quantity = get_quantity()
     
-    total = price * quantity
+        total = price * quantity
 
-    print(f"\nPrice: {price:.2f}",
-          f"\nQuantity: {quantity}",
-          f"\nTotal: ${total:.2f}\n")
+        print(f"\nPrice: {price:.2f}",
+              f"\nQuantity: {quantity}",
+              f"\nTotal: ${total:.2f}\n")
     
-    answer = input("Do You Want To Enter Another Item? (Y/N): ").lower()
-    if answer != 'y':
-        break
+        answer = input("Do You Want To Enter Another Item? (Y/N): ").lower()
+        if answer != 'y':
+            break
     
 if __name__ == "__main__":
     main()
