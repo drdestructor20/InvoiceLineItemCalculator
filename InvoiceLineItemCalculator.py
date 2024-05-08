@@ -14,12 +14,12 @@ def get_price():
 def get_quantity():
     while True:
         try:
-            return int(input("Please Enter Quantity: "))
+            return int(input("\nPlease Enter Quantity: "))
         except ValueError:
             print("Invalid Format. Please Enter A valid Quantity.")
             
 def main():
-    print("Welcome To The Invoice Line Item Calculator\n")
+    print("Welcome To The Invoice Line Item Calculator")
     
     while True:
         price = get_price()
