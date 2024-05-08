@@ -27,7 +27,7 @@ def main():
     
         total = price * quantity
 
-        print(f"\nPrice: {price:.2f}",
+        print(f"\nPrice: ${price:.2f}",
               f"\nQuantity: {quantity}",
               f"\nTotal: ${total:.2f}\n")
     
