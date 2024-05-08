@@ -1,13 +1,13 @@
 #Cesar Murillo
 #CIS 261
-#Week 6 Invoice Calculator
+#Week 6 Invoice Line Item Calculator
 
 
 
 def get_price():
     while True:
         try:
-            return float(input("Please Enter Price: "))
+            return float(input("\nPlease Enter Price: "))
         except ValueError:
             print("Invalid Format. Please Enter A Valid Number.")
             
